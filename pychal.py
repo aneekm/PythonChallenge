@@ -31,10 +31,10 @@ def caesar_char(c, shift):
     return chr(asciiNum)
 
 
-def caesar_str_decrypt(str, shift):
+def caesar_str_decrypt(str, shift=2):
     ret = ""
     for i in str:
-        ret += caesar_char(i, 2) if i.isalpha() else i
+        ret += caesar_char(i, shift) if i.isalpha() else i
     return ret
 
 
@@ -387,4 +387,4 @@ def l16sol():
 
 if __name__ == '__main__':
     # runs the solution I am currently working on
-    l16sol()
+    l1_sol()
